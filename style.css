@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.sideways {
+  /* overflow-x: scroll; */
+  scroll-behavior: smooth;
+  display: flex;
+  width: 3000px;
+}
+
+main {
+  background-image: url("./public/backgrounds/sky.webp");
+  height: 100vh;
+  overflow-x: hidden; /*or overflow-x:scroll */
+  display: flex;
+  z-index: -3;
+}
+
+.mtn {
+  background-image: url("./public/backgrounds/mtn.webp");
+  background-size: contain;
+  z-index: 1;
+  height: 100vh;
+  background-repeat: repeat-x;
+}
+
+.fst {
+  background-image: url("./public/backgrounds/fst.webp");
+  background-size: contain;
+  z-index: 2;
+  height: 100vh;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+}
+
+section {
+  width: 100vw;
+}
