@@ -10,8 +10,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(4, 34, 68, 0.87);
+  background-color: #000000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,14 +21,14 @@
 }
 
 .sideways {
-  /* overflow-x: scroll; */
   scroll-behavior: smooth;
   display: flex;
-  width: 3000px;
+  width: 13000px;
 }
 
 main {
   background-image: url("./public/backgrounds/sky.webp");
+  width: 13000px;
   height: 100vh;
   overflow-x: hidden; /*or overflow-x:scroll */
   display: flex;
@@ -47,6 +47,7 @@ main {
   background-image: url("./public/backgrounds/fst.webp");
   background-size: contain;
   z-index: 2;
+  width: 16000px;
   height: 100vh;
   background-repeat: repeat-x;
   background-position: center;
@@ -55,9 +56,76 @@ main {
 .content {
   display: flex;
   flex-direction: row;
+  gap: 500px;
   z-index: 5;
 }
 
+.land {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.land h1 {
+  font-size: 72px;
+}
+
+.land p {
+  font-size: 24px;
+  background: #ffffffaa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 section {
+  display: flex;
   width: 100vw;
+  gap: 60px;
+}
+
+section .left {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+section .left h1 {
+  font-size: 24px;
+  background: #ffffffaa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+section .parts {
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+
+section .parts img {
+  height: 25vh;
+}
+
+.sugar img {
+  height: 100vh;
+}
+
+.jeffrey img {
+  height: 100vh;
+}
+.limber img {
+  height: 100vh;
+}
+.whitefir img {
+  height: 100vh;
 }
